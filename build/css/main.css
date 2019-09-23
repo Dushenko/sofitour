@@ -1882,6 +1882,7 @@ select{
   height:46px;
   top:41px;
   left:-1px;
+  z-index:2;
   background-color:#fff;
   padding:0 10px;
   display:none;
@@ -3346,7 +3347,7 @@ select{
 
 .owl-carousel.carousel-clients{
   position:relative;
-  max-width:1200px;
+  max-width:84vw;
   width:100%;
   margin:0 -40px 0 auto; }
 
@@ -3676,15 +3677,18 @@ select{
     display:none; }
 
 .tabs__content_city.active .mainForm{
-      background-color:#3c8dcd; }
+      background-color:rgba(60, 141, 205, 0.8); }
 
 .tabs__content_hot.active .mainForm{
-      background-color:#dd4343; }
+      background-color:rgba(221, 67, 67, 0.8); }
 
 .tabs__content_air.active .mainForm{
-      background-color:#ffb334 !important; }
+      background-color:rgba(255, 179, 52, 0.8); }
 
 .tabs__content.active{
+      display:block; }
+
+.tabs__content.block{
       display:block; }
 
 .tabs__content p{
@@ -3972,7 +3976,7 @@ select{
     justify-content:space-between; }
 
 .links-section{
-  padding:35px 0 65px; }
+  padding:40px 0; }
 
 .links-section .nav-blog__list{
     display:-webkit-box;
@@ -5569,7 +5573,7 @@ select{
   padding:35px 0 150px; }
 
 .intro-section_padding{
-    padding:35px 0 90px; }
+    padding:35px 0 120px; }
 
 .intro-section_height{
     min-height:400px; }

@@ -79,26 +79,30 @@
 		&_city {
 			&.active {
 				.mainForm {
-					background-color: rgba(60, 141, 205, 1);
+					background-color: rgba(60, 141, 205, .8);
 				}
 			}
 		}
 		&_hot {
 			&.active {
 				.mainForm {
-					background-color: rgba(221, 67, 67, 1);
+					background-color: rgba(221, 67, 67, .8);
 				}
 			}
 		}
 		&_air {
 			&.active {
 				.mainForm {
-					background-color: rgba(255, 179, 52, 1) !important;
+					background-color: rgba(255, 179, 52, .8);
 				}
 			}
 		}
 
 		&.active {
+			display: block;
+		}
+
+		&.block {
 			display: block;
 		}
 

@@ -13,21 +13,7 @@ $(document).ready(function () {
 
   $('.tour-more').click(function () {
     $('.hidden-tours').slideDown();
-  }); //tabs
-  // $(function() {
-  // 	$("ul.tabs__caption").on("click", "li:not(.active)", function() {
-  // 		$(this)
-  // 		.addClass("active")
-  // 		.siblings()
-  // 		.removeClass("active")
-  // 		.closest("div.tabs")
-  // 		.find("div.tabs__content")
-  // 		.removeClass("active")
-  // 		.eq($(this).index())
-  // 		.addClass("active");
-  // 	});
-  // });
-
+  });
   $(function () {
     $("ul.js-tab-btn").on("click", "li:not(.active)", function () {
       $(this).addClass("active").siblings().removeClass("active").closest("div.js-tabs").find("div.js-tab-content").removeClass("active").eq($(this).index()).addClass("active");
@@ -147,6 +133,9 @@ $(document).ready(function () {
       768: {
         mouseDrag: true,
         touchDrag: true
+      },
+      1780: {
+        items: 4
       }
     }
   });

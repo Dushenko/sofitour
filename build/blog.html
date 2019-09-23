@@ -18,12 +18,12 @@
         <div class="container">
           <nav class="nav">
             <ul class="nav__list">
-              <li class="nav__item"><a class="nav__link" href="#">Горящие туры</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">Календарь низких цен</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">Поиск туров</a></li>
+              <li class="nav__item"><a class="nav__link" href="hot-tours.html">Горящие туры</a></li>
+              <li class="nav__item"><a class="nav__link" href="calendar.html">Календарь низких цен</a></li>
+              <li class="nav__item"><a class="nav__link" href="find-tour.html">Поиск туров</a></li>
               <li class="nav__item"><a class="nav__link" href="#">Рейтинг туроператоров</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">Блог</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+              <li class="nav__item"><a class="nav__link" href="blog.html">Блог</a></li>
+              <li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a></li>
             </ul>
           </nav>
           <div class="lk-wrap"><a class="favorites" href="#"></a>
@@ -37,7 +37,7 @@
       <main class="main">
         <section class="blog-intro-section" style="background-image: url(images/blog-bg.png);">
           <div class="container">
-            <div class="head-wrap"><a class="logo" href="#"></a>
+            <div class="head-wrap"><a class="logo" href="index.html"></a>
               <div class="info-wrap"><a class="info-link tel-link" href="tel:67320372">67 320 372</a><a class="info-link mail-link" href="mailto:info@sofiture.lv">info@sofiture.lv</a><a class="buy-link red-btn" href="#">Купить тур в офисе</a></div>
             </div>
             <h1 class="blog-title">Достопримечательности Гонконга</h1>
@@ -150,13 +150,53 @@
                       <input class="mainForm__input" type="text" placeholder="Страна, курорт или отель">
                     </div>
                     <div class="mainForm__fild mainForm__fild_date">
-                      <input class="mainForm__input" type="text" placeholder="Дата вылета">
+                      <input class="mainForm__input" type="text" placeholder="Дата вылета" autocomplete="off" id="datepicker-hereNew">
                     </div>
-                    <div class="mainForm__fild mainForm__fild_quantity">
-                      <input class="mainForm__input" type="text" placeholder="Кол-во ночей">
+                    <div class="mainForm__fild mainForm__fild_quantity calendar">
+                      <input class="mainForm__input js-quantity-input" type="text" placeholder="Кол-во ночей">
+                      <div class="number"><span class="number__title">От</span>
+                        <div class="number__wrap"><span class="number__btn minus">-</span>
+                          <input class="number__input" type="text" value="1"><span class="number__btn plus">+</span>
+                        </div><span class="number__title">До</span>
+                        <div class="number__wrap"><span class="number__btn minus">-</span>
+                          <input class="number__input" type="text" value="18"><span class="number__btn plus">+</span>
+                        </div>
+                      </div>
                     </div>
                     <div class="mainForm__fild mainForm__fild_tourists">
-                      <input class="mainForm__input" type="text" placeholder="Туристы">
+                      <input class="mainForm__input js-tourists-input" type="text" placeholder="Туристы">
+                      <div class="tourists"><span class="tourists__title">Взрослые</span>
+                        <div class="tourists__fild">
+                          <input type="radio" id="adult1" value="adult1" name="adult">
+                          <label for="adult1">1</label>
+                          <input type="radio" id="adult2" value="adult2" name="adult">
+                          <label for="adult2">2</label>
+                          <input type="radio" id="adult3" value="adult3" name="adult">
+                          <label for="adult3">3</label>
+                          <input type="radio" id="adult4" value="adult4" name="adult">
+                          <label for="adult4">4</label>
+                        </div><span class="tourists__title">Дети от 2 до 11 лет</span>
+                        <div class="tourists__fild">
+                          <input type="radio" id="child0" value="child0" name="child">
+                          <label for="child0">нет</label>
+                          <input type="radio" id="child1" value="child1" name="child">
+                          <label for="child1">1</label>
+                          <input type="radio" id="child2" value="child2" name="child">
+                          <label for="child2">2</label>
+                          <input type="radio" id="child3" value="child3" name="child">
+                          <label for="child3">3</label>
+                        </div><span class="tourists__title">Младенцы до 2 лет</span>
+                        <div class="tourists__fild">
+                          <input type="radio" id="baby0" value="baby0" name="baby">
+                          <label for="baby0">нет</label>
+                          <input type="radio" id="baby1" value="baby1" name="baby">
+                          <label for="baby1">1</label>
+                          <input type="radio" id="baby2" value="baby2" name="baby">
+                          <label for="baby2">2</label>
+                          <input type="radio" id="baby3" value="baby3" name="baby">
+                          <label for="baby3">3</label>
+                        </div>
+                      </div>
                     </div>
                     <button class="mainForm__btn red-btn" type="submit">Искать туры</button>
                   </form>
@@ -186,27 +226,27 @@
             <nav class="nav">
               <ul class="nav__list nav__list_column">
                 <li class="nav__title">О компании</li>
-                <li class="nav__item"><a class="nav__link" href="#">О нас</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">Отзывы</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">Наши партнёры</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">Реквизиты</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+                <li class="nav__item"><a class="nav__link" href="about-us.html">О нас</a></li>
+                <li class="nav__item"><a class="nav__link" href="reviews.html">Отзывы</a></li>
+                <li class="nav__item"><a class="nav__link" href="partners.html">Наши партнёры</a></li>
+                <li class="nav__item"><a class="nav__link" href="contacts.html">Реквизиты</a></li>
+                <li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a></li>
               </ul>
             </nav>
             <nav class="nav">
               <ul class="nav__list nav__list_column">
                 <li class="nav__title">Туристам</li>
                 <li class="nav__item"><a class="nav__link" href="#">Правила покупки</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">Политика конфиденциальности</a></li>
+                <li class="nav__item"><a class="nav__link" href="policy.html">Политика конфиденциальности</a></li>
                 <li class="nav__item"><a class="nav__link" href="#">Как купить тур</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">Частые вопросы</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">Обратная связь</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">Туры в рассрочку</a></li>
+                <li class="nav__item"><a class="nav__link" href="faq.html">Частые вопросы</a></li>
+                <li class="nav__item"><a class="nav__link" href="feedback.html">Обратная связь</a></li>
+                <li class="nav__item"><a class="nav__link" href="installment-tour.html">Туры в рассрочку</a></li>
               </ul>
             </nav>
             <div class="soc-wrap">
               <p class="nav__title">Социальные сети</p>
-              <div class="soc-links"><a class="soc-link soc-link_facebook" href="#"></a><a class="soc-link soc-link_instagram" href="#"></a><a class="soc-link soc-link_twitter" href="#"></a><a class="soc-link soc-link_draugiem" href="#"></a></div><a class="blog-link" href="#">
+              <div class="soc-links"><a class="soc-link soc-link_facebook" href="#"></a><a class="soc-link soc-link_instagram" href="#"></a><a class="soc-link soc-link_twitter" href="#"></a><a class="soc-link soc-link_draugiem" href="#"></a></div><a class="blog-link" href="blog.html">
                 <p class="nav__title nav__title_margin">Блог</p>
                 <p class="blog-text">Kavin II is the clean Corporate Joomla Template for any businesses, freelancers, small business, agences, consulting…</p></a>
             </div>
@@ -219,7 +259,7 @@
         <div class="footer-bottom">
           <div class="container">
             <p class="copyright">Copyright 2019 <a href="#">SofiTure</a>, All Right Reserved</p>
-            <div class="link-wrap"><a href="#">Горящие туры</a><a href="#">Календарь низких цен</a><a href="#">Поиск туров</a></div>
+            <div class="link-wrap"><a href="hot-tours.html">Горящие туры</a><a href="calendar.html">Календарь низких цен</a><a href="find-tour.html">Поиск туров</a></div>
           </div>
         </div>
       </footer>
