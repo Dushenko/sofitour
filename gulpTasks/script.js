@@ -5,10 +5,10 @@ const include = require('gulp-include'),
 module.exports = function() {
     $.gulp.task('scripts', () => {
         return $.gulp.src(['app/js/app.js', 'app/js/animate.js'])
-            .pipe(include())
-            .pipe(babel({
-                presets: ['@babel/env']
-            }))
+            // .pipe(include())
+            // .pipe(babel({
+            //     presets: ['@babel/env']
+            // }))
             .pipe($.gulp.dest('build/js/'));
     });
 };

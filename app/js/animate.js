@@ -4,11 +4,11 @@ $(function() {
 
         $(document).scroll(function() {
 
-            const scrollTop = $(document).scrollTop();
-            const sPopular = $('.popular-section').offset().top;
-            const sBuyTours = $('.buy-tours-section').offset().top;
-            const sMeritSection = $('.merit-section').offset().top;
-            const sSearch = $('.search-tours-section').offset().top;
+            let scrollTop = $(document).scrollTop();
+            let sPopular = $('.popular-section').offset().top;
+            let sBuyTours = $('.buy-tours-section').offset().top;
+            let sMeritSection = $('.merit-section').offset().top;
+            let sSearch = $('.search-tours-section').offset().top;
 
             //Popular Section
             if (scrollTop > sPopular - 300) {
@@ -111,5 +111,93 @@ $(function() {
 
     }
 
+    if ($('main').hasClass('blog-page')) {
+        $(document).scroll(function() {
+
+            let scrollTop = $(document).scrollTop();
+            let popularArticles = $('.popular-articles-section').offset().top;
+
+            if (scrollTop > popularArticles - 300) {
+                let item = $('.article');
+
+                setTimeout(function() {
+                    $(item[0]).addClass('slide-up');
+                }, 200)
+
+                setTimeout(function() {
+                    $(item[1]).addClass('slide-up');
+                }, 400)
+
+                setTimeout(function() {
+                    $(item[2]).addClass('slide-up');
+                }, 600)
+            }
+        })
+    }
+
+    if ($('main').hasClass('about-page')) {
+
+        let links = $('.links__item');
+        let sAbout = $('.about-section').offset().top;
+        let sHowBy = $('.how-buy-section').offset().top;
+
+        setTimeout(function() {
+            $('.about-page .intro-title').addClass('slide-up');
+        }, 200)
+        setTimeout(function() {
+            $(links[0]).addClass('fade-in');
+        }, 400)
+        setTimeout(function() {
+            $(links[1]).addClass('fade-in');
+        }, 600)
+        setTimeout(function() {
+            $(links[2]).addClass('fade-in');
+        }, 800)
+        setTimeout(function() {
+            $(links[3]).addClass('fade-in');
+        }, 1000)
+        setTimeout(function() {
+            $(links[4]).addClass('fade-in');
+        }, 1200)
+
+        $(document).scroll(function() {
+
+            let scrollTop = $(document).scrollTop();
+
+            if (scrollTop > sAbout - 300) {
+
+                let item = $('.advantage');
+
+                setTimeout(function() {
+                    $(item[0]).addClass('slide-up');
+                }, 200)
+                setTimeout(function() {
+                    $(item[1]).addClass('slide-up');
+                }, 400)
+                setTimeout(function() {
+                    $(item[2]).addClass('slide-up');
+                }, 600)
+                setTimeout(function() {
+                    $(item[3]).addClass('slide-up');
+                }, 800)
+                setTimeout(function() {
+                    $(item[4]).addClass('slide-up');
+                }, 1000)
+                setTimeout(function() {
+                    $(item[5]).addClass('slide-up');
+                }, 1200)
+            }
+
+            if (scrollTop > sHowBy - 300) {
+
+                $('.img-wrap').addClass('slide-left');
+
+                setTimeout(function() {
+                    $('.buy-tabs-wrap').addClass('fade-in');
+                }, 400)
+            }
+
+        })
+    }
 
 })

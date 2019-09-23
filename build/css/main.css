@@ -2618,8 +2618,7 @@ select{
     transition:-webkit-transform .5s ease;
     -webkit-transition:-webkit-transform .5s ease;
     transition:transform .5s ease;
-    transition:transform .5s ease, -webkit-transform .5s ease;
-    transition:transform .5s ease,-webkit-transform .5s ease; }
+    transition:transform .5s ease, -webkit-transform .5s ease; }
 
 .nav__link:hover:before{
     -webkit-transform-origin:bottom left;
@@ -3778,6 +3777,22 @@ select{
       color:#000;
       margin:15px 0; }
 
+.about-page .intro-title{
+  position:relative;
+  top:1000px;
+  opacity:0;
+  -webkit-animation-duration:1s;
+  animation-duration:1s;
+  -webkit-animation-fill-mode:forwards;
+  animation-fill-mode:forwards; }
+
+.about-page .links__item{
+  opacity:0;
+  -webkit-animation-duration:1s;
+  animation-duration:1s;
+  -webkit-animation-fill-mode:forwards;
+  animation-fill-mode:forwards; }
+
 .about-section{
   padding:100px 0 200px;
   background-image:url("../images/partner-bg.png");
@@ -3806,7 +3821,14 @@ select{
     padding:30px 28px 25px;
     margin:0 15px 30px;
     border-radius:5px;
-    box-shadow:0 0 20px 0 rgba(197, 197, 197, 0.5); }
+    box-shadow:0 0 20px 0 rgba(197, 197, 197, 0.5);
+    position:relative;
+    top:100px;
+    opacity:0;
+    -webkit-animation-duration:1s;
+    animation-duration:1s;
+    -webkit-animation-fill-mode:forwards;
+    animation-fill-mode:forwards; }
 
 .about-section .advantage__img{
       width:70px;
@@ -3918,7 +3940,14 @@ select{
     -webkit-box-pack:center;
     justify-content:center;
     -webkit-box-align:center;
-    align-items:center; }
+    align-items:center;
+    position:relative;
+    left:100px;
+    opacity:0;
+    -webkit-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+    -webkit-animation-duration:1s;
+    animation-duration:1s; }
 
 .how-buy-section .img-wrap img{
       width:100%;
@@ -4104,8 +4133,7 @@ select{
       transition:-webkit-transform .5s ease;
       -webkit-transition:-webkit-transform .5s ease;
       transition:transform .5s ease;
-      transition:transform .5s ease, -webkit-transform .5s ease;
-      transition:transform .5s ease,-webkit-transform .5s ease; }
+      transition:transform .5s ease, -webkit-transform .5s ease; }
 
 .links-section .nav-blog__link:hover:before{
       -webkit-transform-origin:bottom left;
@@ -4120,6 +4148,15 @@ select{
   background-position:center 100%;
   background-size:cover;
   background-position:center; }
+
+.popular-articles-section .article{
+    position:relative;
+    top:100px;
+    opacity:0;
+    -webkit-animation-duration:0.5s;
+    animation-duration:0.5s;
+    -webkit-animation-fill-mode:forwards;
+    animation-fill-mode:forwards; }
 
 .popular-articles-section .article-title{
     font-size:30px;
