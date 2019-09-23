@@ -433,6 +433,82 @@ select{
   color:#333333;
   margin-bottom:24px; }
 
+.slide-up{
+  -webkit-animation-name:slideUp;
+  animation-name:slideUp; }
+
+.slide-left{
+  -webkit-animation-name:slideLeft;
+  animation-name:slideLeft; }
+
+.slide-right{
+  -webkit-animation-name:slideRight;
+  animation-name:slideRight; }
+
+.fade-in{
+  -webkit-animation-name:fadeIn;
+  animation-name:fadeIn; }
+
+@-webkit-keyframes slideUp{
+  from{
+    opacity:0;
+    top:100px; }
+  to{
+    opacity:1;
+    top:0; } }
+
+@keyframes slideUp{
+  from{
+    opacity:0;
+    top:100px; }
+  to{
+    opacity:1;
+    top:0; } }
+
+@-webkit-keyframes slideLeft{
+  from{
+    opacity:0;
+    left:100px; }
+  to{
+    opacity:1;
+    left:0; } }
+
+@keyframes slideLeft{
+  from{
+    opacity:0;
+    left:100px; }
+  to{
+    opacity:1;
+    left:0; } }
+
+@-webkit-keyframes slideRight{
+  from{
+    opacity:0;
+    right:100px; }
+  to{
+    opacity:1;
+    right:0; } }
+
+@keyframes slideRight{
+  from{
+    opacity:0;
+    right:100px; }
+  to{
+    opacity:1;
+    right:0; } }
+
+@-webkit-keyframes fadeIn{
+  from{
+    opacity:0; }
+  to{
+    opacity:1; } }
+
+@keyframes fadeIn{
+  from{
+    opacity:0; }
+  to{
+    opacity:1; } }
+
 .article{
   width:369px;
   display:-webkit-box;
@@ -5701,6 +5777,15 @@ select{
 .popular-section .tour-more:hover:after{
         background-image:url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 490.4 490.4' style='enable-background:new 0 0 490.4 490.4;' xml:space='preserve'%3E%3Cpath fill='%23fff' d='M490.4,245.2C490.4,110,380.4,0,245.2,0S0,110,0,245.2s110,245.2,245.2,245.2S490.4,380.4,490.4,245.2z M24.5,245.2 c0-121.7,99-220.7,220.7-220.7s220.7,99,220.7,220.7s-99,220.7-220.7,220.7S24.5,366.9,24.5,245.2z'/%3E%3Cpath fill='%23fff' d='M253.9,360.4l68.9-68.9c4.8-4.8,4.8-12.5,0-17.3s-12.5-4.8-17.3,0l-48,48V138.7c0-6.8-5.5-12.3-12.3-12.3 s-12.3,5.5-12.3,12.3v183.4l-48-48c-4.8-4.8-12.5-4.8-17.3,0s-4.8,12.5,0,17.3l68.9,68.9c2.4,2.4,5.5,3.6,8.7,3.6 S251.5,362.8,253.9,360.4z'/%3E%3C/svg%3E%0A"); }
 
+.popular-section .tour{
+    opacity:0;
+    top:100px;
+    position:relative;
+    -webkit-animation-duration:1s;
+    animation-duration:1s;
+    -webkit-animation-fill-mode:forwards;
+    animation-fill-mode:forwards; }
+
 .newsletter-section{
   position:relative;
   z-index:2; }
@@ -5763,7 +5848,14 @@ select{
     width:584px;
     height:846px;
     overflow:hidden;
-    margin-right:50px; }
+    margin-right:50px;
+    position:relative;
+    right:100px;
+    opacity:0;
+    -webkit-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+    -webkit-animation-duration:0.5s;
+    animation-duration:0.5s; }
 
 .buy-tours-section .img-wrap img{
       width:100%;
@@ -5776,7 +5868,7 @@ select{
     width:100%; }
 
 .buy-tours-section .buy-info_hot .buy-text{
-      max-width:100%!important;
+      max-width:100% !important;
       margin-bottom:20px !important; }
 
 .buy-tours-section .buy-info_hot .buy-text_img{
@@ -5787,7 +5879,14 @@ select{
     line-height:1.17;
     color:#4094d6;
     font-weight:400;
-    margin-bottom:24px; }
+    margin-bottom:24px;
+    position:relative;
+    top:100px;
+    opacity:0;
+    -webkit-animation-duration:0.5s;
+    animation-duration:0.5s;
+    -webkit-animation-fill-mode:forwards;
+    animation-fill-mode:forwards; }
 
 .buy-tours-section .buy-sub-title{
     display:block;
@@ -5796,16 +5895,29 @@ select{
     color:#4094d6;
     margin:0 0 12px;
     max-width:395px;
-    width:100%; }
+    width:100%;
+    position:relative;
+    top:100px;
+    opacity:0;
+    -webkit-animation-duration:0.5s;
+    animation-duration:0.5s;
+    -webkit-animation-fill-mode:forwards;
+    animation-fill-mode:forwards; }
 
 .buy-tours-section .buy-text{
     font-size:14px;
     line-height:1.86;
     color:#333333;
     margin-bottom:35px;
-    position:relative;
     max-width:440px;
-    width:100%; }
+    width:100%;
+    position:relative;
+    top:100px;
+    opacity:0;
+    -webkit-animation-duration:0.5s;
+    animation-duration:0.5s;
+    -webkit-animation-fill-mode:forwards;
+    animation-fill-mode:forwards; }
 
 .buy-tours-section .buy-text:nth-of-type(1){
       max-width:548px; }
@@ -5843,7 +5955,12 @@ select{
     color:#4094d6;
     padding-left:27px;
     margin-bottom:45px;
-    position:relative; }
+    position:relative;
+    opacity:0;
+    -webkit-animation-duration:0.5s;
+    animation-duration:0.5s;
+    -webkit-animation-fill-mode:forwards;
+    animation-fill-mode:forwards; }
 
 .buy-tours-section .buy-link:after{
       content:'';
@@ -5899,7 +6016,14 @@ select{
 
 .merit-section .merit{
     width:297px;
-    height:323px; }
+    height:323px;
+    position:relative;
+    top:100px;
+    opacity:0;
+    -webkit-animation-duration:0.5s;
+    animation-duration:0.5s;
+    -webkit-animation-fill-mode:forwards;
+    animation-fill-mode:forwards; }
 
 .merit-section .merit img{
       width:100%;
@@ -5929,7 +6053,12 @@ select{
   -ms-transform:translateY(-50%);
   transform:translateY(-50%);
   width:394px;
-  height:569px; }
+  height:569px;
+  opacity:0;
+  -webkit-animation-duration:1s;
+  animation-duration:1s;
+  -webkit-animation-fill-mode:forwards;
+  animation-fill-mode:forwards; }
 
 .search-tours-section .search-img img{
     width:100%;
@@ -5951,7 +6080,14 @@ select{
 .search-tours-section .search-info{
   max-width:270px;
   width:100%;
-  margin:0 68px 35px 0; }
+  margin:0 68px 35px 0;
+  position:relative;
+  opacity:0;
+  top:100px;
+  -webkit-animation-duration:0.5s;
+  animation-duration:0.5s;
+  -webkit-animation-fill-mode:forwards;
+  animation-fill-mode:forwards; }
 
 .search-tours-section .search-title{
   font-size:22px;

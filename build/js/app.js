@@ -13,6 +13,8 @@ $(document).ready(function () {
 
   $('.tour-more').click(function () {
     $('.hidden-tours').slideDown();
+    $('.popular-section .tour').addClass('slide-up');
+    $(this).fadeOut();
   }); //tabs
   // $(function() {
   // 	$("ul.tabs__caption").on("click", "li:not(.active)", function() {
