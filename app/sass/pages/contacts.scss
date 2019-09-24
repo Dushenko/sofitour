@@ -1,3 +1,37 @@
+.contacts-page {
+	.intro-title {
+		position: relative;
+        top: 100px;
+        opacity: 0;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+	}
+
+	.contact {
+		position: relative;
+        top: 100px;
+        opacity: 0;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+	}
+
+	.map-wrap {
+		position: relative;
+        right: 100px;
+        opacity: 0;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+	}
+
+	.connection {
+		position: relative;
+        top: 100px;
+        opacity: 0;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+	}
+}
+
 .contacts-info-section {
 	padding: 50px 0 110px;
 	background-image: url('../images/intro-sky.png');

@@ -1,3 +1,41 @@
+.description-tour-page {
+	.description-slider {
+		opacity: 0;
+		animation-duration: 1s;
+		animation-fill-mode: forwards;
+	}
+
+	.description-info {
+		position: relative;
+		top: 100px;
+		opacity: 0;
+		animation-duration: 1s;
+		animation-fill-mode: forwards;
+	}
+
+	.pay-tour-section {
+		opacity: 0;
+		animation-duration: 1s;
+		animation-fill-mode: forwards;
+	}
+
+	.service {
+		position: relative;
+		top: 100px;
+		opacity: 0;
+		animation-duration: 1s;
+		animation-fill-mode: forwards;
+	}
+
+	.review {
+		position: relative;
+		right: 100px;
+		opacity: 0;
+		animation-duration: 1s;
+		animation-fill-mode: forwards;
+	}
+}
+
 .hotel-description-section {
 	padding-top: 80px;
 

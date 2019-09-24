@@ -1,6 +1,5 @@
 //=require ../blocks/**/*.js
-<<<<<<< HEAD
-$(document).ready(function () {
+$(document).ready(function() {
 
 	//lang
 	$(".lang__link").click(function () {
@@ -15,7 +14,9 @@ $(document).ready(function () {
 	//show more
 
 	$('.tour-more').click(function () {
-		$('.hidden-tours').slideDown();
+        $('.hidden-tours').slideDown();
+        $('.tour').addClass('slide-up');
+        $(this).fadeOut();
 	});
 
 	$(function() {
@@ -63,88 +64,6 @@ $(document).ready(function () {
 		top = $(id).offset().top;
 		$('body,html').animate({scrollTop: top}, 1500);
 	});
-=======
-$(document).ready(function() {
-
-    //lang
-    $(".lang__link").click(function() {
-        var clicked = $(this).html();
-        $('.lang__current').html(clicked);
-    });
-
-    $('.lang').click(function() {
-        $('.lang__wrap').slideToggle();
-    });
-
-    //show more
-
-    $('.tour-more').click(function() {
-        $('.hidden-tours').slideDown();
-        $('.popular-section .tour').addClass('slide-up');
-        $(this).fadeOut();
-    });
-
-    //tabs
-    // $(function() {
-    // 	$("ul.tabs__caption").on("click", "li:not(.active)", function() {
-    // 		$(this)
-    // 		.addClass("active")
-    // 		.siblings()
-    // 		.removeClass("active")
-    // 		.closest("div.tabs")
-    // 		.find("div.tabs__content")
-    // 		.removeClass("active")
-    // 		.eq($(this).index())
-    // 		.addClass("active");
-    // 	});
-    // });
-
-    $(function() {
-        $("ul.js-tab-btn").on("click", "li:not(.active)", function() {
-            $(this)
-                .addClass("active")
-                .siblings()
-                .removeClass("active")
-                .closest("div.js-tabs")
-                .find("div.js-tab-content")
-                .removeClass("active")
-                .eq($(this).index())
-                .addClass("active");
-        });
-    });
-
-    //map-btns
-    $('.map-btn_open').click(function() {
-        $(this).hide();
-        $('.map-btn_hide').show();
-        $('.hotel').show();
-        $('.map-wrap').addClass('active');
-    });
-    $('.map-btn_hide').click(function() {
-        $(this).hide();
-        $('.map-btn_open').show();
-        $('.hotel').hide();
-        $('.map-wrap').removeClass('active');
-    });
-
-    //user-lk
-    $('.user').click(function() {
-        $('.user__wrap').slideToggle();
-    });
-
-    $('.user__link').click(function() {
-        $('.user__link').removeClass('active');
-        $(this).addClass('active');
-    });
-
-    // smooth scroll
-    $('.scroll-link').on('click', function(event) {
-        event.preventDefault();
-        var id = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({ scrollTop: top }, 1500);
-    });
->>>>>>> 900dbaef9394e0680587358227e340b9c351efb0
 
     //accordion
     $(document).ready(function() {
@@ -176,7 +95,6 @@ $(document).ready(function() {
     });
 
     //calendar
-<<<<<<< HEAD
     $('.calendar__year-btn').click(function () {
     	$(this).parent().parent().find('.calendar__table.hidden').slideToggle();
     	$(this).toggleClass('active');
@@ -346,36 +264,6 @@ $(document).ready(function() {
 		owl_1.trigger('prev.owl.carousel',500);
 	});
 
-});
-=======
-    $('.calendar__year-btn').click(function() {
-        $(this).parent().parent().find('.calendar__table.hidden').slideToggle();
-        $(this).toggleClass('active');
-    });
-
-
-    //plus - minus 
-    $('.minus').click(function() {
-        var $input = $(this).parent().find('input');
-        var count = parseInt($input.val()) - 1;
-        count = count < 1 ? 1 : count;
-        $input.val(count);
-        $input.change();
-        return false;
-    });
-    $('.plus').click(function() {
-        var $input = $(this).parent().find('input');
-        $input.val(parseInt($input.val()) + 1);
-        $input.change();
-        return false;
-    });
-
-    // mainForm inputs
-    $('.js-quantity-input').focus(function() {
-        $('.number').addClass('active');
-    });
->>>>>>> 900dbaef9394e0680587358227e340b9c351efb0
-
     $('.js-tourists-input').focus(function() {
         $('.tourists').addClass('active');
     });
@@ -467,12 +355,12 @@ $(document).ready(function() {
     });
 
     //first slide
-    let rangeSlider = $(".pay-slider");
+    // let rangeSlider = $(".pay-slider");
 
-    checkClasses();
-    rangeSlider.on('translated.owl.carousel', function(event) {
-        checkClasses();
-    });
+    // checkClasses();
+    // rangeSlider.on('translated.owl.carousel', function(event) {
+    //     checkClasses();
+    // });
 
     function checkClasses() {
         var total = $('.pay-slider .owl-stage .owl-item.active').length;
@@ -511,6 +399,7 @@ $(document).ready(function() {
     $('.customNextBtn').click(function() {
         owl_1.trigger('next.owl.carousel', 500);
     });
+    
     $('.customPreviousBtn').click(function() {
         owl_1.trigger('prev.owl.carousel', 500);
     });

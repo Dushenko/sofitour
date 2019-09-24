@@ -433,6 +433,15 @@ select{
   color:#333333;
   margin-bottom:24px; }
 
+.partners-page .partner{
+  position:relative;
+  top:100px;
+  opacity:0;
+  -webkit-animation-duration:1s;
+  animation-duration:1s;
+  -webkit-animation-fill-mode:forwards;
+  animation-fill-mode:forwards; }
+
 .slide-up{
   -webkit-animation-name:slideUp;
   animation-name:slideUp; }
@@ -4067,6 +4076,33 @@ select{
       line-height:2.56;
       color:#333333; }
 
+.blog-open .blog-title{
+  position:relative;
+  top:100px;
+  opacity:0;
+  -webkit-animation-duration:1s;
+  animation-duration:1s;
+  -webkit-animation-fill-mode:forwards;
+  animation-fill-mode:forwards; }
+
+.blog-open .find-tours{
+  position:relative;
+  top:100px;
+  opacity:0;
+  -webkit-animation-duration:1s;
+  animation-duration:1s;
+  -webkit-animation-fill-mode:forwards;
+  animation-fill-mode:forwards; }
+
+.blog-open .find-wrap{
+  position:relative;
+  top:100px;
+  opacity:0;
+  -webkit-animation-duration:1s;
+  animation-duration:1s;
+  -webkit-animation-fill-mode:forwards;
+  animation-fill-mode:forwards; }
+
 .blog-intro-section{
   padding:34px 0 150px;
   background-position:center 100%;
@@ -4137,7 +4173,8 @@ select{
       transition:-webkit-transform .5s ease;
       -webkit-transition:-webkit-transform .5s ease;
       transition:transform .5s ease;
-      transition:transform .5s ease, -webkit-transform .5s ease; }
+      transition:transform .5s ease, -webkit-transform .5s ease;
+      transition:transform .5s ease,-webkit-transform .5s ease; }
 
 .links-section .nav-blog__link:hover:before{
       -webkit-transform-origin:bottom left;
@@ -4611,6 +4648,42 @@ select{
       width:auto;
       height:auto; }
 
+.contacts-page .intro-title{
+  position:relative;
+  top:100px;
+  opacity:0;
+  -webkit-animation-duration:1s;
+  animation-duration:1s;
+  -webkit-animation-fill-mode:forwards;
+  animation-fill-mode:forwards; }
+
+.contacts-page .contact{
+  position:relative;
+  top:100px;
+  opacity:0;
+  -webkit-animation-duration:1s;
+  animation-duration:1s;
+  -webkit-animation-fill-mode:forwards;
+  animation-fill-mode:forwards; }
+
+.contacts-page .map-wrap{
+  position:relative;
+  right:100px;
+  opacity:0;
+  -webkit-animation-duration:1s;
+  animation-duration:1s;
+  -webkit-animation-fill-mode:forwards;
+  animation-fill-mode:forwards; }
+
+.contacts-page .connection{
+  position:relative;
+  top:100px;
+  opacity:0;
+  -webkit-animation-duration:1s;
+  animation-duration:1s;
+  -webkit-animation-fill-mode:forwards;
+  animation-fill-mode:forwards; }
+
 .contacts-info-section{
   padding:50px 0 110px;
   background-image:url("../images/intro-sky.png");
@@ -4711,6 +4784,47 @@ select{
 
 .contacts-section .feedbackForm__textarea-wrap{
     margin-bottom:25px; }
+
+.description-tour-page .description-slider{
+  opacity:0;
+  -webkit-animation-duration:1s;
+  animation-duration:1s;
+  -webkit-animation-fill-mode:forwards;
+  animation-fill-mode:forwards; }
+
+.description-tour-page .description-info{
+  position:relative;
+  top:100px;
+  opacity:0;
+  -webkit-animation-duration:1s;
+  animation-duration:1s;
+  -webkit-animation-fill-mode:forwards;
+  animation-fill-mode:forwards; }
+
+.description-tour-page .pay-tour-section{
+  opacity:0;
+  -webkit-animation-duration:1s;
+  animation-duration:1s;
+  -webkit-animation-fill-mode:forwards;
+  animation-fill-mode:forwards; }
+
+.description-tour-page .service{
+  position:relative;
+  top:100px;
+  opacity:0;
+  -webkit-animation-duration:1s;
+  animation-duration:1s;
+  -webkit-animation-fill-mode:forwards;
+  animation-fill-mode:forwards; }
+
+.description-tour-page .review{
+  position:relative;
+  right:100px;
+  opacity:0;
+  -webkit-animation-duration:1s;
+  animation-duration:1s;
+  -webkit-animation-fill-mode:forwards;
+  animation-fill-mode:forwards; }
 
 .hotel-description-section{
   padding-top:80px; }
@@ -5648,9 +5762,23 @@ select{
     width:100%;
     padding:20px 12px 20px 22px; }
 
+.feedback-page .intro-title{
+  position:relative;
+  top:100px;
+  opacity:0;
+  -webkit-animation-duration:1s;
+  animation-duration:1s;
+  -webkit-animation-fill-mode:forwards;
+  animation-fill-mode:forwards; }
+
 .feedback-section{
   padding:50px 0 185px;
-  background-color:#f8f8f8; }
+  background-color:#f8f8f8;
+  opacity:0;
+  -webkit-animation-duration:1.5s;
+  animation-duration:1.5s;
+  -webkit-animation-fill-mode:forwards;
+  animation-fill-mode:forwards; }
 
 .feedback-section .feedback-wrap{
     max-width:869px;
@@ -5686,6 +5814,16 @@ select{
       padding-top:0;
       border-top:none;
       margin-top:0; }
+
+.main-page .main-title,
+.main-page .intro-text{
+  position:relative;
+  top:100px;
+  opacity:0;
+  -webkit-animation-duration:1s;
+  animation-duration:1s;
+  -webkit-animation-fill-mode:forwards;
+  animation-fill-mode:forwards; }
 
 .intro-section{
   background-image:url("../images/intro-bg.png");
@@ -6156,6 +6294,31 @@ select{
 
 .directions-section .country-wrap .country:nth-child(4n+4){
         width:16%; }
+
+.installment-page .intro-title{
+  position:relative;
+  top:100px;
+  opacity:0;
+  -webkit-animation-duration:1s;
+  animation-duration:1s;
+  -webkit-animation-fill-mode:forwards;
+  animation-fill-mode:forwards; }
+
+.installment-page .advantages{
+  position:relative;
+  top:100px;
+  opacity:0;
+  -webkit-animation-duration:1s;
+  animation-duration:1s;
+  -webkit-animation-fill-mode:forwards;
+  animation-fill-mode:forwards; }
+
+.installment-page .pay-tour-section{
+  opacity:0;
+  -webkit-animation-duration:1s;
+  animation-duration:1s;
+  -webkit-animation-fill-mode:forwards;
+  animation-fill-mode:forwards; }
 
 .installment-section{
   padding:60px 0; }

@@ -1,3 +1,29 @@
+.blog-open {
+    .blog-title {
+        position: relative;
+        top: 100px;
+        opacity: 0;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    .find-tours {
+        position: relative;
+        top: 100px;
+        opacity: 0;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    .find-wrap {
+        position: relative;
+        top: 100px;
+        opacity: 0;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+}
+
 .blog-intro-section {
     padding: 34px 0 150px;
     background-position: center 100%;
@@ -19,7 +45,6 @@
 }
 
 .links-section {
-<<<<<<< HEAD
 	padding: 40px 0;
 	.nav-blog {
 		&__list {
@@ -69,54 +94,6 @@
 			}
 		}
 	}
-=======
-    padding: 35px 0 65px;
-    .nav-blog {
-        &__list {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        &__item {
-            margin: 0 30px;
-        }
-        &__link {
-            font-size: 14px;
-            font-weight: 500;
-            line-height: 1;
-            text-align: center;
-            color: #333333;
-            text-transform: uppercase;
-            position: relative;
-            &.active {
-                &:before {
-                    transform-origin: bottom left;
-                    transform: scaleX(1);
-                }
-            }
-            &:before {
-                content: '';
-                position: absolute;
-                bottom: -3px;
-                left: 0;
-                right: 0;
-                height: 2px;
-                background-color: #333333;
-                transform-origin: bottom right;
-                transform: scaleX(0);
-                transition: -webkit-transform .5s ease;
-                transition: transform .5s ease;
-                transition: transform .5s ease, -webkit-transform .5s ease;
-            }
-            &:hover {
-                &:before {
-                    transform-origin: bottom left;
-                    transform: scaleX(1);
-                }
-            }
-        }
-    }
->>>>>>> 900dbaef9394e0680587358227e340b9c351efb0
 }
 
 .popular-articles-section {
